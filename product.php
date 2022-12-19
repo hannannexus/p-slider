@@ -28,7 +28,8 @@ ob_start();
 echo'<div id="wrap">';
 echo'<div class="product-slider">';
 $args = array(
-    'post_type'=>'product'
+    'post_type'=>'product',
+    'posts_per_page'=> -1
 );
 $query = new WP_Query($args);
 
