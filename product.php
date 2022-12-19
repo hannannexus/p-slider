@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Product Info
+ * Plugin Name: Product slider
  * Plugin URI: #
  * Description: Display product info by using shortcode
  * Author: Hannan
