@@ -64,43 +64,4 @@ return ob_get_clean();
 add_shortcode('product_slider','product_new_slider');
 
 
-/* add some style */
-// function custom_css(){
-//     ?>
-//     <style>
-//         #wrap{
-//             height: 100px;
-//             width: auto;
-//             margin: 100px 20px;
-//         }
-//         #wrap .main{}
-//         #wrap .main .title{
-//             text-align:center;
-//             font-weight: blod;
-//             color: green;
-//         }
-//         #wrap .main .thumbnail{
-            
-//         }
-//         #wrap .main .price{
-//             text-align:center;
-//             font-weight: blod;
-//             color: green;
-//         }
-//         #wrap .main .quantity{
-//             text-align:center;
-//             font-weight: blod;
-//             color: green;
-//         }
 
-//         /*slick custom css*/
-
-//         .slick-slide img {
-//             height: 200px;
-//             width: 200px;
-//         }
-
-//     </style>
-//     <?php
-// }
-// add_action('wp_head','custom_css');
