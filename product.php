@@ -14,6 +14,7 @@
 
  function assets(){
     wp_enqueue_style('slick-css','//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css',null,'1.0','all');
+    wp_enqueue_style('slider-main-css',plugin_dir_url(__FILE__).'/assets/css/slider-main.css',null,'1.0','all');
     wp_enqueue_script('slick-js','//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js',null,'1.0',true);
     wp_enqueue_script('main-js',plugin_dir_url( __FILE__ ).'/assets/js/main.js',array('jquery'),'1.0',true);
  }
@@ -64,42 +65,42 @@ add_shortcode('product_slider','product_new_slider');
 
 
 /* add some style */
-function custom_css(){
-    ?>
-    <style>
-        #wrap{
-            height: 100px;
-            width: auto;
-            margin: 100px 20px;
-        }
-        #wrap .main{}
-        #wrap .main .title{
-            text-align:center;
-            font-weight: blod;
-            color: green;
-        }
-        #wrap .main .thumbnail{
+// function custom_css(){
+//     ?>
+//     <style>
+//         #wrap{
+//             height: 100px;
+//             width: auto;
+//             margin: 100px 20px;
+//         }
+//         #wrap .main{}
+//         #wrap .main .title{
+//             text-align:center;
+//             font-weight: blod;
+//             color: green;
+//         }
+//         #wrap .main .thumbnail{
             
-        }
-        #wrap .main .price{
-            text-align:center;
-            font-weight: blod;
-            color: green;
-        }
-        #wrap .main .quantity{
-            text-align:center;
-            font-weight: blod;
-            color: green;
-        }
+//         }
+//         #wrap .main .price{
+//             text-align:center;
+//             font-weight: blod;
+//             color: green;
+//         }
+//         #wrap .main .quantity{
+//             text-align:center;
+//             font-weight: blod;
+//             color: green;
+//         }
 
-        /*slick custom css*/
+//         /*slick custom css*/
 
-        .slick-slide img {
-            height: 200px;
-            width: 200px;
-        }
+//         .slick-slide img {
+//             height: 200px;
+//             width: 200px;
+//         }
 
-    </style>
-    <?php
-}
-add_action('wp_head','custom_css');
+//     </style>
+//     <?php
+// }
+// add_action('wp_head','custom_css');
